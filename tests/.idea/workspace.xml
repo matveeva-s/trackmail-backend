@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc28c55a-c6c7-4f28-976d-6ba5c9570f41" name="Default Changelist" comment="" />
+    <list default="true" id="dc28c55a-c6c7-4f28-976d-6ba5c9570f41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +51,21 @@
     <session id="568852094">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="25" />
+          <entry key="py" value="322" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="25" />
+          <entry key="Python" value="322" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -75,13 +82,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DoubleLinkedListTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1539624052801" expanded="true" signature="91:92" ph="..." />
+                <marker date="1539624052801" expanded="true" signature="149:150" ph="..." />
+                <marker date="1539624052801" expanded="true" signature="149:152" ph="..." />
+                <marker date="1539624052801" expanded="true" signature="347:523" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DoubleLinkedList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1594">
+            <state relative-caret-position="280">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
@@ -108,6 +131,7 @@
         <option value="$PROJECT_DIR$/list.py" />
         <option value="$PROJECT_DIR$/DoubleLinkedList.py" />
         <option value="$PROJECT_DIR$/DoubleLinkedListTest.py" />
+        <option value="$PROJECT_DIR$/app_tests.py" />
       </list>
     </option>
   </component>
@@ -190,7 +214,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24981844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -244,26 +267,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list.py">
+    <entry file="file://$PROJECT_DIR$/list.py" />
+    <entry file="file://$PROJECT_DIR$/DoubleLinkedListTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2260">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="240">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DoubleLinkedList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1594">
+        <state relative-caret-position="280">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DoubleLinkedListTest.py">
+    <entry file="file://$PROJECT_DIR$/app_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <marker date="1539624052801" expanded="true" signature="91:92" ph="..." />
+            <marker date="1539624052801" expanded="true" signature="149:150" ph="..." />
+            <marker date="1539624052801" expanded="true" signature="149:152" ph="..." />
+            <marker date="1539624052801" expanded="true" signature="347:523" ph="..." />
           </folding>
         </state>
       </provider>
