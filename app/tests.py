@@ -116,5 +116,21 @@ class AppTest(unittest.TestCase):
         rv = self.app.get('/load_file/')
         self.assertEqual(405, rv.status_code)
 
+class JSONRPCTest(unittest.TestCase):
+    def setUp(self):
+        self.app = app.test_client()
+
+    def send_message_test(self):
+        rv = self.app.post('/api/', data={"jsonrpc":"2.0","method":"send_message","params":[1,1,"try_to_send_message"],"id":"1"	})
+        self.assertEqual(b'{"id": "1","jsonrpc": "2.0","result": null}', rv.data)
+
+    def read_message_test(self):
+        rv = self.app.post('/api/', data={"jsonrpc":"2.0","method":"read_message","params":[1,1,11],"id":"1"})
+        self.assertEqual(b'{"id": "1","jsonrpc": "2.0","result": null}', rv.data)
+
+    def get_chat_messages_test(self):
+        rv = self.app.post('/api/', data={"jsonrpc":"2.0","method":"get_chat_messages","params":[1,1],"id":"1"})
+        self.assertEqual(b'{"id": "1","jsonrpc": "2.0", "result": {"0": [8, 1, 1, "try1", "Wed, 05 Dec 2018 01:27:26 GMT"]}}', rv.data)
+
 if __name__ == "__main__":
     unittest.main()
