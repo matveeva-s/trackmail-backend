@@ -4,21 +4,6 @@ from app import app, jsonrpc, cache, db
 from .model import User,Chat,Attachment,Message
 from .forms import UserForm, ChatForm
 
-
-@app.route('/form/', methods=['GET', 'POST'])
-def forms():
-  if request.method == "GET":
-      return """<html><head></head><body>
-      <form method="POST" action="/form/">
-        <input name="first_name" >
-        <input name="last_name" >
-        <input id="button" type="submit" >
-      </form>
-      </body></html>"""
-  else:
-      rv = jsonify (request.form)
-      return rv
-
 @app.route('/auth/', methods=['GET'])
 def try_auth():
     return redirect("https://oauth.vk.com/authorize?client_id=6840474&display=page&redirect_uri=http://127.0.0.1:5000/&scope=email&response_type=code&v=5.92", code=302)
@@ -201,25 +186,3 @@ def index():
 
 
 
-
-'''
-@app.route('/login/', methods=['GET', 'POST'])
-def login():
-  if request.method == "GET":
-      return """<html><head></head><body>
-      <form method="POST" action="/login/">
-        <input name="login" >
-        <input name="password" >
-        <input type="submit" >
-      </form>
-      </body></html>"""
-  else:
-      resp = jsonify(request.form)
-      resp.status_code = 200
-      return resp
-      
-@jsonrpc.method('read_message')
-def read_message(user_id, chat_id, message_id):
-    return model.read_message(user_id, chat_id, message_id)
-      
-'''
