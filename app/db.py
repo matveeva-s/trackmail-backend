@@ -36,12 +36,12 @@ def _rollback_db(exception, **extra):
     if hasattr(flask.g, 'dbconn'):
         conn = flask.g.dbconn
         conn.rollback()
-        conn.close()
+        #conn.close()
         delattr(flask.g, 'dbconn')
 
 def _commit_db(exception, **extra):
     if hasattr(flask.g, 'dbconn'):
         conn = flask.g.dbconn
         conn.commit()
-        conn.close()
+        #conn.close()
 
