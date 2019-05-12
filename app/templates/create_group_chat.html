@@ -1,0 +1,16 @@
+<html>
+    <title>Create group chat</title>
+    <head><h1>Create new group chat</h1></head>
+    <body>
+        <form method="POST" action="/create_group_chat/">
+            <input placeholder="Topic" name="topic" ><br>
+            <h3>Select users:</h3><br>
+            {% for user in users %}
+                <p>
+                    <input type="checkbox" name="{{user.user_id}}">{{user.first_name}} {{user.last_name}} (@{{user.nick}})
+                </p>
+            {% endfor %}
+            <br><input type="submit"/>
+        </form>
+    </body>
+</html>

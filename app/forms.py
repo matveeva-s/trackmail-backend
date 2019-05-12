@@ -1,4 +1,4 @@
-from wtforms import validators, Form, TextField, IntegerField
+from wtforms import validators, Form, TextField, IntegerField, widgets, SelectField
 from wtforms.validators import DataRequired, Email, Length
 from .model import User, Chat
 
@@ -8,6 +8,13 @@ class UserForm(Form):
     nick = TextField('nick', validators=[DataRequired(), Length(max=30)])
     email = TextField('email', validators=[Email()])
 
-class ChatForm(Form):
-    first_id = IntegerField('first_id', validators=[DataRequired()])
-    second_id = IntegerField('second_id', validators=[DataRequired()])
+class GroupChatForm(Form):
+    topic = TextField('topic', validators=[DataRequired(), Length(max=50)])
+    users = widgets.CheckboxInput()
+
+class PersonalChatForm(Form):
+    user = TextField('user', validators=[DataRequired(), Length(max=81)])
+
+class UserSearchForm(Form):
+    first_name = TextField('first_name', validators=[Length(max=40)])
+    last_name = TextField('last_name', validators=[Length(max=40)])

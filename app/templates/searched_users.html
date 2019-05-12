@@ -1,0 +1,9 @@
+<html>
+    <title>Searched users</title>
+    <head><h1>Found users</h1></head>
+    <body>
+    {% for user in users %}
+        <li> {{user.first_name}} {{user.last_name}} (@{{user.nick}}, {{user.email}})</li>
+    {% endfor %}
+    </body>
+</html>

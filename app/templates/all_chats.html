@@ -1,0 +1,13 @@
+<html>
+    <title>All chats</title>
+    <head><h1>Chats list</h1></head>
+    <body>
+     {% for chat in chats %}
+        <li> <b>{{chat.topic}}</b> with
+            {%for user in chat.users %}
+            <i>{{user.first_name}} {{user.last_name}},</i>
+            {% endfor %}
+        </li>
+    {% endfor %}
+    </body>
+</html>
